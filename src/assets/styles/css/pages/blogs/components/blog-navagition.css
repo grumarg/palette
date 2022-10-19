@@ -1,0 +1,40 @@
+.blog-navigation {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.blog-navigation .navigation-item {
+  font-family: "Bold";
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #0082C7;
+  background-color: #0082c70f;
+  transition: 0.3s;
+  user-select: none;
+}
+.blog-navigation .navigation-item.arrow {
+  height: 35px;
+  width: 35px;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.blog-navigation .navigation-item img {
+  height: auto;
+  max-width: 22px;
+}
+.blog-navigation .navigation-item img.rotate {
+  transform: rotate(180deg);
+}
+.blog-navigation .navigation-item:hover {
+  background-color: #0082c726;
+}
+
+/*# sourceMappingURL=blog-navagition.css.map */

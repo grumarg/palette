@@ -1,0 +1,41 @@
+@import '../../../utils/variables.scss';
+@import '../../../utils/mixins.scss';
+
+.blog-navigation {
+  width: 100%;
+
+  @include flex;
+  gap: 10px;
+
+  .navigation-item {
+    font-family: 'Bold';
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: $appColor;
+    background-color: #0082c70f;
+    transition: .3s;
+    user-select: none;
+
+    &.arrow {
+      height: 35px;
+      width: 35px;
+      padding: 0;
+
+      @include flex-column;
+    }
+
+    img {
+      height: auto;
+      max-width: 22px;
+
+      &.rotate {
+        transform: rotate(180deg);
+      }
+    }
+
+    &:hover {
+      background-color: #0082c726;
+    }
+  }
+}

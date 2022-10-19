@@ -1,0 +1,37 @@
+.blog {
+  width: 400px;
+  padding: 20px;
+  box-shadow: -3px -3px 7px #e4e3e380, 3px 3px 7px #a8aeb478;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 12px;
+}
+.blog:hover {
+  background-color: #cccccc33;
+}
+.blog img {
+  height: auto;
+  max-width: 200px;
+  border-radius: 8px;
+}
+.blog img.default {
+  max-width: 150px;
+  border-radius: 0;
+}
+.blog .date {
+  font-size: 0.9em;
+}
+.blog h4 {
+  text-align: center;
+  font-family: "Bold";
+  font-size: 1em;
+}
+
+/*# sourceMappingURL=blog-item.css.map */

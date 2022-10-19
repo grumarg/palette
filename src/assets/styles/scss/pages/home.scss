@@ -1,0 +1,143 @@
+@import '../utils/variables.scss';
+@import '../utils/mixins.scss';
+
+.home-page {
+  @include flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 15px;
+
+  .home-navigation {
+    width: 220px;
+
+    .tags-selecter {
+      margin-top: 10px;
+
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 5px;
+
+      .tag {
+        font-size: 12px;
+        border: 1px solid #ccc;
+        color: #636060;
+        font-weight: bolder;
+        margin: 4px 3px 0 0;
+        user-select: none;
+        padding: 4px 8px;
+        border-radius: 4px;
+        cursor: pointer;
+        user-select: none;
+
+        display: flex;
+        align-items: center;
+        gap: 4px;
+
+        .circle {
+          height: 7px;
+          width: 7px;
+          border-radius: 50%;
+          border: 1px solid #cccccc69;
+        }
+      }
+    }
+  }
+
+  .colors {
+    width: 100%;
+    
+    @include flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 30px;
+    
+    .color {
+      min-height: 300px;
+      min-width: 250px;
+
+      .palletes {
+        border-radius: 10px;
+        overflow: hidden;
+        border: 1px solid #cccccc69;
+
+        .pallete {
+          min-height: 50px;
+          width: 100%;
+
+          border-top: 1px solid #cccccc69;
+
+          &:first-child {
+            border-top: none;
+          }
+
+          @include flex-column;
+
+          .hex-color {
+            display: none;
+          }
+          
+          &.active {
+
+            .hex-color {
+              cursor: pointer;
+              display: block;
+              background-color: #ffffffa1;
+              padding: 5px 10px;
+              border-radius: 4px;
+              font-size: 0.9em;
+              user-select: none;
+            }
+          }
+        }
+      }
+
+      .additional {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 15px;
+
+        .likes {
+          padding: 5px 8px;
+          border: 1px solid #cccccc69;
+          border-radius: 5px;
+
+          &.active {
+            cursor: pointer;
+          }
+
+          @include flex;
+          gap: 5px;
+
+          img {
+            height: auto;
+            max-width: 18px;
+          }
+        }
+
+        .date {
+          font-size: 0.9em;
+        }
+      }
+    }
+  }
+
+  .information {
+    width: 165px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .title {
+      font-size: 0.85em;
+      font-family: 'Bold';
+      color: #444;
+    }
+
+    .description {
+      font-size: 0.7em;
+    }
+  }
+}

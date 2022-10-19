@@ -1,0 +1,67 @@
+.main-header {
+  width: calc(100% - 80px);
+  background-color: #ffffffe8;
+  border-bottom: 1px solid #cccccc59;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+}
+.main-header .cover {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 1200px) {
+  .main-header .cover {
+    min-width: auto;
+  }
+}
+.main-header .cover .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.main-header .cover .logo img {
+  height: auto;
+  max-width: 40px;
+}
+.main-header .cover .logo .title {
+  font-family: "Super-Bold";
+  font-size: 1.3em;
+  color: #0082C7;
+}
+.main-header .cover ul {
+  display: flex;
+  gap: 30px;
+}
+.main-header .cover ul li {
+  list-style-type: none;
+}
+.main-header .cover ul li a {
+  color: #413f42db;
+  user-select: none;
+  text-transform: capitalize;
+  font-family: "Bold";
+}
+.main-header .cover ul li a:hover {
+  color: #0082C7;
+}
+.main-header .cover .special-link {
+  background-color: #0082C7;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-family: "Bold";
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+.main-header .cover .special-link:hover {
+  box-shadow: -3px -3px 7px #e4e3e3, 3px 3px 7px #a8aeb4;
+}
+
+/*# sourceMappingURL=header.css.map */

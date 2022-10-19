@@ -1,0 +1,63 @@
+.main-footer {
+  margin-top: 50px;
+  border-top: 1px solid #cccccc59;
+  padding: 40px 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.main-footer .cover {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-footer .cover .info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.main-footer .cover .info h3 {
+  font-family: "Super-Bold";
+  font-size: 2em;
+  text-transform: uppercase;
+}
+.main-footer .cover .info .description b {
+  font-family: "Bold";
+}
+.main-footer .cover .info .description a {
+  color: #0082C7;
+  margin: 0 5px;
+}
+.main-footer .cover .info ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.main-footer .cover .info ul li {
+  list-style-type: none;
+}
+.main-footer .cover .info ul li a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding-right: 5px;
+  border-radius: 3px;
+}
+.main-footer .cover .info ul li a img {
+  height: auto;
+  max-width: 40px;
+}
+.main-footer .cover .info ul li a span {
+  transition: 0.4s;
+}
+.main-footer .cover .info ul li a span:hover {
+  color: #0082C7;
+}
+
+/*# sourceMappingURL=footer.css.map */

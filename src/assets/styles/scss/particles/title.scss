@@ -1,0 +1,10 @@
+@import '../utils/variables.scss';
+
+.page-title {
+  width: 100%;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: 'Super-Bold';
+  color: $appColor;
+  font-size: 2em;
+}

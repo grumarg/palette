@@ -1,0 +1,54 @@
+.team {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.team.preloader-mode {
+  gap: 0;
+}
+.team .member {
+  display: flex;
+  gap: 15px;
+}
+.team .member .profile-image img {
+  height: auto;
+  max-width: 130px;
+  border-radius: 10px;
+  box-shadow: -3px -3px 7px #f2f2f2, 3px 3px 7px #c0c9d2;
+}
+.team .member .profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+.team .member .profile-info .name {
+  font-size: 1.7em;
+  font-family: "Bold";
+}
+.team .member .profile-info .job-title {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+}
+.team .member .profile-info .job-title span {
+  border: 1px solid #0082C7;
+  color: #0082C7;
+  border-radius: 2px;
+  font-size: 0.9em;
+  padding: 2px 6px;
+}
+.team .member .profile-info .description {
+  font-size: 0.9em;
+}
+.team .member .profile-info .description .toggle-info {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #0082C7;
+  font-family: "Bold";
+  margin-left: 4px;
+}
+
+/*# sourceMappingURL=team.css.map */

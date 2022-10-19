@@ -1,0 +1,41 @@
+.publication {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccccccad;
+  padding-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.publication:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.publication .description {
+  font-size: 1.2em;
+  color: #0082C7;
+}
+.publication .description.non-active {
+  color: #413f42db;
+  cursor: default;
+}
+.publication .description .num {
+  color: inherit;
+  margin-right: 3px;
+  font-family: "Bold";
+}
+.publication .description .year {
+  margin-left: 5px;
+}
+.publication .authors {
+  display: flex;
+  gap: 7px;
+}
+.publication .authors .author {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 2px 6px;
+  font-size: 0.9em;
+}
+
+/*# sourceMappingURL=publication.css.map */

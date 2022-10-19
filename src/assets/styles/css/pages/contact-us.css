@@ -1,0 +1,57 @@
+.contact-us-page {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+}
+.contact-us-page .preview {
+  font-size: 1.1em;
+  max-width: 500px;
+  text-align: center;
+  display: block;
+}
+.contact-us-page .contact-us-form {
+  min-width: 420px;
+  border: 1px solid #cccccc59;
+  border-radius: 4px;
+  opacity: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.contact-us-page .contact-us-form textarea {
+  min-height: 150px;
+  resize: none;
+}
+.contact-us-page .contact-us-form button, .contact-us-page .contact-us-form textarea, .contact-us-page .contact-us-form input {
+  border: none;
+  background: none;
+  font-size: 1em;
+}
+.contact-us-page .contact-us-form input {
+  padding: 10px;
+  border-bottom: 1px solid #cccccc59;
+  font-family: "Bold";
+}
+.contact-us-page .contact-us-form textarea {
+  padding: 0 10px;
+  padding-top: 10px;
+}
+.contact-us-page .contact-us-form button {
+  border-top: 1px solid #cccccc59;
+  padding: 10px 0;
+  font-family: "Bold";
+  color: #413f42a3;
+  cursor: not-allowed;
+}
+.contact-us-page .contact-us-form button.active {
+  color: #0082C7;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.contact-us-page .contact-us-form button.active:hover {
+  opacity: 0.8;
+}
+
+/*# sourceMappingURL=contact-us.css.map */

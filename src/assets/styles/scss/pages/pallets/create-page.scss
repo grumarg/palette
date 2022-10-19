@@ -1,0 +1,143 @@
+@import '../../utils/mixins.scss';
+
+.create-pallet {
+  @include flex-column;
+
+  .title {
+    font-size: 1em;
+  }
+
+  .pallets {
+    margin-top: 20px;
+    width: 500px;
+    border: 1px solid #cccccc69;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    
+    .pallete {
+      min-height: 60px;
+      width: 100%;
+      cursor: pointer;
+      font-family: 'Bold';
+
+      input {
+        cursor: pointer;
+      }
+
+      @include flex-column;
+      position: relative;
+
+      &:first-child {
+        border-radius: 10px 10px 0 0;
+      }
+      
+      &:last-child {
+        border-radius: 0 0  10px 10px;
+      }
+
+      input {
+        min-height: 60px;
+        width: 100%;
+        opacity: 0;
+      }
+
+      .color {
+        position: absolute;
+        left: -100px;
+      }
+    }
+  }
+
+  .tags-area {
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    input {
+      min-height: 20px;
+      width: 480px;
+      border: 1px solid #cccccc69;
+      border-radius: 5px;
+      padding: 7px 10px;
+    }
+
+    .tags {
+      width: 480px;
+
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 5px;
+
+      .selected {
+        font-size: 0.9em;
+      }
+
+      .tag {
+        font-size: 12px;
+        border: 1px solid #ccc;
+        color: #636060;
+        font-weight: bolder;
+        margin: 4px 3px 0 0;
+        user-select: none;
+        padding: 2px 4px;
+        border-radius: 4px;
+      }
+    }
+
+    .tags-selecter {
+      width: 480px;
+      border-top: 1px solid #cccccc69;
+      padding-top: 10px;
+
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 5px;
+
+      .tag {
+        font-size: 12px;
+        border: 1px solid #ccc;
+        color: #636060;
+        font-weight: bolder;
+        margin: 4px 3px 0 0;
+        user-select: none;
+        padding: 2px 4px;
+        border-radius: 4px;
+        cursor: pointer;
+        user-select: none;
+
+        display: flex;
+        align-items: center;
+        gap: 4px;
+
+        .circle {
+          height: 5px;
+          width: 5px;
+          border-radius: 50%;
+          border: 1px solid #cccccc69;
+        }
+      }
+    }
+  }
+
+  .create {
+    margin-top: 10px;
+    padding: 8px 20px;
+    background-color: #3D8361;
+    color: #fff;
+    font-size: 1em;
+    font-family: 'Bold';
+    border-radius: 5px;
+    border: none;
+    transition: 0.3s;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.blogs {
+  margin-top: 20px;
+
+  display: flex;
+  justify-content: center;
+
+  flex-wrap: wrap;
+  gap: 50px;
+
+  &.preloader-blogs {
+    .preview-block {
+      margin: 0;
+    }
+  }
+
+  @import './components/blog-item.scss';
+}

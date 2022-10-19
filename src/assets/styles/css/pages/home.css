@@ -1,0 +1,126 @@
+.home-page {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 15px;
+}
+.home-page .home-navigation {
+  width: 220px;
+}
+.home-page .home-navigation .tags-selecter {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.home-page .home-navigation .tags-selecter .tag {
+  font-size: 12px;
+  border: 1px solid #ccc;
+  color: #636060;
+  font-weight: bolder;
+  margin: 4px 3px 0 0;
+  user-select: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.home-page .home-navigation .tags-selecter .tag .circle {
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  border: 1px solid #cccccc69;
+}
+.home-page .colors {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 30px;
+}
+.home-page .colors .color {
+  min-height: 300px;
+  min-width: 250px;
+}
+.home-page .colors .color .palletes {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #cccccc69;
+}
+.home-page .colors .color .palletes .pallete {
+  min-height: 50px;
+  width: 100%;
+  border-top: 1px solid #cccccc69;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.home-page .colors .color .palletes .pallete:first-child {
+  border-top: none;
+}
+.home-page .colors .color .palletes .pallete .hex-color {
+  display: none;
+}
+.home-page .colors .color .palletes .pallete.active .hex-color {
+  cursor: pointer;
+  display: block;
+  background-color: #ffffffa1;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  user-select: none;
+}
+.home-page .colors .color .additional {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.home-page .colors .color .additional .likes {
+  padding: 5px 8px;
+  border: 1px solid #cccccc69;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.home-page .colors .color .additional .likes.active {
+  cursor: pointer;
+}
+.home-page .colors .color .additional .likes img {
+  height: auto;
+  max-width: 18px;
+}
+.home-page .colors .color .additional .date {
+  font-size: 0.9em;
+}
+.home-page .information {
+  width: 165px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.home-page .information .title {
+  font-size: 0.85em;
+  font-family: "Bold";
+  color: #444;
+}
+.home-page .information .description {
+  font-size: 0.7em;
+}
+
+/*# sourceMappingURL=home.css.map */

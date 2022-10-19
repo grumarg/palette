@@ -1,0 +1,154 @@
+.information {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.information:last-child {
+  margin-bottom: 0;
+}
+.information .title-medium {
+  font-family: "Super-Bold";
+  font-size: 1.4em;
+  max-width: 900px;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+.information .description {
+  margin-top: 10px;
+  font-size: 0.9em;
+  max-width: 600px;
+}
+.information .description.special {
+  max-width: 900px;
+}
+.information .description b {
+  font-family: "Bold";
+}
+.information .description a {
+  color: #0082C7;
+}
+.information .title-medium, .information .description {
+  text-align: center;
+}
+.information .projects {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 35px;
+}
+.information .projects .project {
+  max-width: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.information .projects .project img {
+  height: auto;
+  max-width: 60px;
+}
+.information .projects .project span {
+  font-size: 0.9em;
+  font-family: "Bold";
+  max-width: 350px;
+  text-align: center;
+}
+.information .areas {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.information .areas .area {
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  text-transform: capitalize;
+  font-size: 0.8em;
+  font-family: "Bold";
+  padding: 2px 8px;
+}
+
+.preloaders {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.information-blocks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.information-blocks .information-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.information-blocks .information-block .title-medium {
+  font-family: "Super-Bold";
+  font-size: 1.2em;
+  max-width: 1000px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+.information-blocks .information-block .title-medium .toggle-info {
+  height: 19px;
+  width: 19px;
+  background: #0082c7ad;
+  border-radius: 50%;
+  border: none;
+  font-family: "Bold";
+  flex-direction: column;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.4s;
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  transform: translate(0, -50%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.information-blocks .information-block .title-medium .toggle-info:hover {
+  background: #0082C7;
+}
+.information-blocks .information-block .description {
+  margin-top: 5px;
+  font-size: 0.9em;
+  max-width: 600px;
+}
+.information-blocks .information-block .description.special {
+  max-width: 900px;
+}
+.information-blocks .information-block .description b {
+  font-family: "Bold";
+}
+.information-blocks .information-block .description a {
+  color: #0082C7;
+}
+.information-blocks .information-block .title-medium, .information-blocks .information-block .description {
+  text-align: center;
+}
+
+/*# sourceMappingURL=collaborations.css.map */

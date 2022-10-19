@@ -1,0 +1,78 @@
+@import '../utils/variables.scss';
+
+.main-header {
+  width: calc(100% - 80px);
+  background-color: #ffffffe8;
+  border-bottom: 1px solid $opacityLineColor;
+  padding: 15px $appPadding;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  position: fixed;
+  z-index: 1;
+
+  .cover {
+    width: 100%;
+    max-width: $maxWidth;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: $maxWidth) {
+      min-width: auto;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      img {
+        height: auto;
+        max-width: 40px;
+      }
+
+      .title {
+        font-family: 'Super-Bold';
+        font-size: 1.3em;
+        color: $appColor;
+      }
+    }
+  
+    ul {
+      display: flex;
+      gap: 30px;
+  
+      li {
+        list-style-type: none;
+  
+        a {
+          color: $textColor;
+          user-select: none;
+          text-transform: capitalize;
+          font-family: 'Bold';
+  
+          &:hover {
+            color: $appColor;
+          }
+        }
+      }
+    }
+  
+    .special-link {
+      background-color: $appColor;
+      padding: 6px 10px;
+      border-radius: 4px;
+      font-family: 'Bold';
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 0.9em;
+  
+      &:hover {
+        box-shadow: $blockShahow;
+      }
+    }
+  }
+}

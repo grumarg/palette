@@ -1,0 +1,49 @@
+@import '../../../utils/variables.scss';
+
+.publication {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccccccad;
+  padding-bottom: 25px;
+
+  &:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  .description{
+    font-size: 1.2em;
+    color: $appColor;
+
+    &.non-active {
+      color: $textColor;
+      cursor: default;
+    }
+
+    .num {
+      color: inherit;
+      margin-right: 3px;
+      font-family: 'Bold';
+    }
+
+    .year {
+      margin-left: 5px;
+    }
+  }
+
+  .authors {
+    display: flex;
+    gap: 7px;
+
+    .author { 
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      padding: 2px 6px;
+      font-size: 0.9em;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.about-block {
+  margin: 0 auto;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.about-block .title {
+  font-size: 1.1em;
+  margin-bottom: 5px;
+  color: #444;
+  font-family: "Bold";
+}
+.about-block span {
+  max-width: 600px;
+  text-align: center;
+  font-size: 0.9em;
+}
+.about-block span b {
+  font-family: "Bold";
+}
+
+/*# sourceMappingURL=about.css.map */
